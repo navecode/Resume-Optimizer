@@ -1,0 +1,39 @@
+# Python virtual environment
+# This contains all your project's Python packages and is specific to your machine.
+# It's recreated using `pip install -r requirements.txt`.
+venv/
+.venv/
+env/
+.env/
+
+# Python cache and compiled files
+# Python generates these automatically to speed things up.
+__pycache__/
+*.pyc
+
+# Environment variables
+# Just like the frontend, these files store secrets and should be ignored.
+.env
+
+# IDE and editor directories
+.idea/
+.vscode/
+.project
+
+# OS-specific files
+.DS_Store
+
+# Testing and coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+nosetests.xml
+
+# Distribution / packaging
+/dist/
+/build/
+*.egg-info/
+
+# Local database files (if you use one for testing)
+*.sqlite3
+db.sqlite3
