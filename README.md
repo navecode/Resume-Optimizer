@@ -83,7 +83,7 @@ cd ../frontend/
 npm install
 
 # 3. Start the React development server
-npm start
+npm run dev
 ```
 
 The React application should now be running and will open automatically in your browser, typically at `http://localhost:3000`. The app is configured to send API requests to your local backend server.
