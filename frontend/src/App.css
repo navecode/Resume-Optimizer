@@ -69,11 +69,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  /* Ensure proper scrolling behavior */
+  overflow-y: auto;
+  scroll-behavior: smooth;
 }
 
 #root {
   min-height: 100vh;
   width: 100%;
+  /* Ensure the root container can grow with content */
+  display: flex;
+  flex-direction: column;
 }
 
 /* Shadcn UI Component Styles */
@@ -340,6 +346,9 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  /* Ensure proper scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .bg-gray-50 {
@@ -465,6 +474,10 @@ body {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .text-blue-500 {
@@ -648,6 +661,43 @@ body {
 
 .font-sans {
   font-family: var(--font-sans);
+}
+
+/* Notification Styles */
+.notification {
+  padding: 1rem 1.5rem;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  border: 1px solid;
+  animation: slideIn 0.3s ease-out;
+}
+
+.notification.error {
+  background-color: #FEF2F2;
+  color: #DC2626;
+  border-color: #FECACA;
+}
+
+.notification.success {
+  background-color: #F0FDF4;
+  color: #16A34A;
+  border-color: #BBF7D0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Design */

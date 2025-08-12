@@ -344,8 +344,8 @@ export default function ResumeOptimizer() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 py-8 md-py-12">
+    <div className="min-h-screen bg-gray-50 w-full">
+      <div className="max-w-6xl mx-auto px-4 py-8 md-py-12 w-full">
         {/* Header */}
         <div className="text-center mb-8 md-mb-12">
           <h1 className="text-3xl md-text-4xl font-bold text-gray-900 mb-3">Naveen Resume Optimizer</h1>
