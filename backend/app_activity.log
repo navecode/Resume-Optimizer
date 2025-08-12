@@ -12,3 +12,6 @@ violations {
   seconds: 8
 }
 ]
+2025-08-12 08:14:13,893 - ERROR - Gemini Cover Letter Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 1.
+2025-08-12 08:14:21,730 - ERROR - Gemini Cover Letter Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 1.
+2025-08-12 08:14:30,472 - ERROR - Gemini Cover Letter Error: Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 1.
